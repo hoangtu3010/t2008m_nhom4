@@ -3,7 +3,7 @@ const mssql = require("mssql");
 const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT||5000;
-app.listen(5000,function (){
+app.listen(port,function (){
     console.log("Sever đang chạy...")
 })
 app.use((req, res, next) => {
